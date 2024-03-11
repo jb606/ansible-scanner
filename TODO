@@ -1,0 +1,17 @@
+What to Do
+1) Try to SSH in to a machine with a service account
+2) When connected use the Ansible setup module to download the system info
+3) Add system info to Netbox
+
+
+What to Add to Netbox
+Hostname (ansible_nodename)
+Primary Network info
+  ansible_default_ipv4.network
+  ansible_default_ipv4.macaddress
+  ansible_default_ipv4.alias
+  ansible_default_ipv4.address
+  ansible_default_ipv4.type
+
+System Make (ansible_system_vendor)
+Model (ansible_product_name)
